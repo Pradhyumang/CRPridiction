@@ -9,10 +9,10 @@
     <h1>Credit Score Prediction</h1>
     <form action="/predict" method="post">
         <label for="payment_history">Payment History:</label>
-        <input type="number" id="payment_history" name="payment_history" required><br><br>
+        <input type="number" id="payment_history" name="payment_history" required max="2900"><br><br>
 
         <label for="credit_utilization_ratio">Credit Utilization Ratio:</label>
-        <input type="number" step="0.01" id="credit_utilization_ratio" name="credit_utilization_ratio" required><br><br>
+        <input type="number" step="0.01" id="credit_utilization_ratio" name="credit_utilization_ratio" required max="1"><br><br>
 
         <label for="number_of_credit_accounts">Number of Credit Accounts:</label>
         <input type="number" id="number_of_credit_accounts" name="number_of_credit_accounts" required><br><br>
@@ -33,6 +33,9 @@
         </select><br><br>
 
         <input type="submit" value="Predict">
+    </form>
+    <form action="/allData" method="post">
+        <input type="submit" value="All Data">
     </form>
 </body>
 </html>

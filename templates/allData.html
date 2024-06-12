@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,18 +7,14 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
-    <h1>Credit Score Prediction Result</h1>
-    <p>Your predicted credit score is: {{ credit_score }}</p>
-    <p>Your credit segment is: {{ segment }}</p>
-
-    <!-- Plotly graph container -->
+  
     <div id="graph-container"></div>
+    <a href="/">Home</a>
 
-    <!-- JavaScript to render the Plotly graph -->
-    <!-- <script>
+    <script>
         var graphJson = {{ graph_json | safe }};
         Plotly.newPlot('graph-container', graphJson.data, graphJson.layout);
-    </script> -->
+    </script>
     
 </body>
-</html>
+</html> 
